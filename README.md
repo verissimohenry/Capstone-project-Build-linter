@@ -21,7 +21,7 @@ To get a local copy of the repository please run the following commands on your 
 ## Testing instructions
 
 `$ cd my_linters`
-`$ rspec spec/linters_test.rb`
+`$ rspec spec/linters_test`
 
 ## Test For Linter Errors
 
