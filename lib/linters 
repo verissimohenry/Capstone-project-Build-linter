@@ -1,3 +1,16 @@
 class Linters
   attr_reader :file_path, :content, :file_lines, :errors
+
+  def initialize(file_path)
+    @file_path = file_path
+    @file_lines = File.readlines(@file_path)
+    @errors = []
+  end
+
+  def run_checker
+    trailing_white_spaces
+    count_ends
+    empty_line
+  end
+
 end  
