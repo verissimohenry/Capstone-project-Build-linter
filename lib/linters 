@@ -25,4 +25,18 @@ class Linters
       @errors << "You have a trailing white space on line #{idx + 1}" if line[-2] == ' '
     end
   end
+
+  def count_ends
+    special_words = %w[def do if class]
+    count_start = 0
+    count_end = 0
+
+    @file_lines.each do |line|
+      if (line.split & special_words).any?
+        count_start += 1
+
+      elsif line.strip == 'end'
+        count_end += 1
+      end
+    end
 end
