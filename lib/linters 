@@ -40,7 +40,14 @@ class Linters
       end
     end
 
-    def empty_line
+    if count_start < count_end
+      @errors << 'You have an extra "end" in your code, please remove it'
+    elsif count_start > count_end
+      @errors << 'You are missing "end" in your code'
+    end
+  end
+
+  def empty_line
     @file_lines.each_with_index do |line, idx|
       @errors << "You have an empty line on line #{idx + 1}, please remove it" if line.strip.empty?
     end
