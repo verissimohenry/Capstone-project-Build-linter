@@ -13,4 +13,11 @@ class Linters
     empty_line
   end
 
+  def log_all_errors
+    puts "#{@errors.length} errors found."
+    @errors.each_with_index do |err, idx|
+      puts "#{idx + 1} - #{err} "
+    end
+  end
+
 end  
