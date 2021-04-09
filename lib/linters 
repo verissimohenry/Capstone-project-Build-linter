@@ -25,5 +25,4 @@ class Linters
       @errors << "You have a trailing white space on line #{idx + 1}" if line[-2] == ' '
     end
   end
-
-end  
+end
