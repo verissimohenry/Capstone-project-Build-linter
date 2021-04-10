@@ -21,14 +21,14 @@ To get a local copy of the repository please run the following commands on your 
 ## Testing instructions
 
 `$ cd my_linters`
-`$ rspec spec/linters_test`
+`$ rspec spec/linters_test.rb
 
 ## Test For Linter Errors
 
 > Copy your ruby file in the my_linters folder
 
 ```
-$ ruby bin/main
+$ ruby bin/main.rb
 ```
 
 It will log all errors in your code from test.rb file.
