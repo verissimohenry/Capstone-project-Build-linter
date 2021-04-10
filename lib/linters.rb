@@ -20,6 +20,8 @@ class Linters
     end
   end
 
+  private
+
   def trailing_white_spaces
     @file_lines.each_with_index do |line, idx|
       @errors << "You have a trailing white space on line #{idx + 1}" if line[-2] == ' '
