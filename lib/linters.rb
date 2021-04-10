@@ -49,7 +49,7 @@ class Linters
 
   def empty_line
     @file_lines.each_with_index do |line, idx|
-      @errors << "You have an empty line on line #{idx + 1}, please remove it" if line.strip.empty?
+      @errors << "You have an empty line on line #{idx + 1 + 1}, please remove it" if line.strip.empty?
     end
   end
 end
