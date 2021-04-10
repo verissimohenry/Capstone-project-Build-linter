@@ -2,7 +2,7 @@
 
 In this project I made custom linters for checking ruby syntax, I made checks for empty lines, trailing white spaces and unclosed blocks.
 
-# Instructions
+# Instruction
 
 For the: [Github-link](https://github.com/verissimohenry/Capstone-project-Build-linter)
 
