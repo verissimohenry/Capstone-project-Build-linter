@@ -1,4 +1,4 @@
-# Capstone-project-Build-inter
+# Capstone-project-Build-linter
 
 In this project I made custom linters for checking ruby syntax, I made checks for empty lines, trailing white spaces and unclosed blocks.
 
@@ -25,7 +25,7 @@ To get a local copy of the repository please run the following commands on your 
 
 ## Test For Linter Errors
 
-> Copy your ruby file in the my_linters folder
+> Copy your ruby file in the Capstone-project-Build-linter folder
 
 ```
 $ ruby bin/main.rb
