@@ -1,4 +1,5 @@
 require_relative '../lib/linters'
+
 describe Linters do
   describe '#white_trailing_space' do
     it 'trailing white space should be removed' do
@@ -21,6 +22,14 @@ describe Linters do
       file = Linters.new('test.rb')
       file.run_checker
       expect(file.errors[-2]).to eql('You have an empty line on line 3, please remove it')
+    end
+  end
+
+  describe '#no_empty_line' do
+    it 'No Empty line in code' do
+      file = Linters.new('test.rb')
+      file.run_checker
+      expect(file.errors[-2]).not_to eql('not to have empty line')
     end
   end
 end
