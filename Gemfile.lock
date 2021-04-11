@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: 'https://rubygems.org'
   specs:
     ast (2.4.2)
     diff-lcs (1.4.4)
