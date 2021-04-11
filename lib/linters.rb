@@ -12,6 +12,7 @@ class Linters
     count_ends
     empty_line
   end
+  
 
   def log_all_errors
     puts "#{@errors.length} errors found."
